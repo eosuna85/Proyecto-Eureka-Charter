@@ -276,7 +276,7 @@ justify-content: space-between;
 .seccion3 {
     display: flex;
     flex-direction: column;
-    padding: var(--spacing-68) var(--spacing-24);
+    padding: var(--spacing-68) var(--spacing-12);
 }
 
 .seccion3__formulario {
@@ -287,14 +287,14 @@ justify-content: space-between;
     background: linear-gradient(30deg, #84868b 0%, rgb(38, 38, 40) 90%);
 }
 
-.seccion3_title {
+.seccion3__title {
     text-align: center;
     font-family: var(--alternative-font-family);
     font-size: var(--font-jumbo);
     font-weight: 500;
     color: var(--light-font-solid);
     padding-top: var(--spacing-8);
-    padding-bottom: var(--spacing-24);
+    padding-bottom: var(--spacing-20);
 }
 
 .seccion3__seleccion {
@@ -532,11 +532,13 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: var(--spacing-8);
 }
 
 .footer__info {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: start;
 }
 
@@ -649,7 +651,101 @@ footer {
     }
 }
 
-@media screen and (max-width: 800px) {
+
+
+@media screen and (max-width: 768px) {
+
+    /* + MAIN INDEX */
+
+    .hero__eslogan {
+        font-size: 1.4em;
+    }
+
+    .seccion1__content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-8);
+    }
+
+    .seccion1__text {
+        font-size: 1.4em;
+    }
+
+    .seccion2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: var(--spacing-36);
+    }
+
+    .seccion2__CEO {
+        font-size: 1.2em;
+    }
+
+    .seccion2__foto_CEO {
+        width: 40%;
+    }
+
+    .seccion3__title {
+        font-size: var(--font-large);
+    }
+
+    .seccion3__seleccion {
+        font-size: var(--font-small);
+        gap: var(--spacing-8);
+    }
+
+    .destino__title {
+        font-size: var(--font-small);
+        gap: none;
+    }
+
+    .footer__logo {
+        max-width: 30%;
+    }
+
+    .footer__nombre {
+        font-size: var(--font-large);
+        font-weight: 400;
+    }
+
+    .footer__text {
+        font-size: var(--font-small);
+        font-weight: 100;
+    }
+
+    .footer__menu {
+        gap: var(--spacing-12);
+    }
+
+    .footer__item {
+        max-width: 10%;
+    }
+
+    .footer__copy {
+        font-size: var(--font-xsmall);
+        font-weight: 100;
+    }
+    
+    /* + MAIN CONTACTO */
+
+    .main__cont {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--spacing-12);
+        padding: var(--spacing-12);
+    }  
+
+    .contacto__form {
+        
+        padding: var(--spacing-24);
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
 
     /* + MAIN INDEX */
 
@@ -679,10 +775,10 @@ footer {
     }
 
     .seccion2__foto_CEO {
-        width: 50%;
+        width: 60%;
     }
 
-    .seccion3_title {
+    .seccion3__title {
         font-size: var(--font-large);
     }
 
@@ -696,61 +792,44 @@ footer {
         gap: none;
     }
 
+    .footer__logo {
+        max-width: 30%;
+    }
+
+    .footer__nombre {
+        font-size: var(--font-medium);
+        font-weight: 400;
+    }
+
+    .footer__text {
+        font-size: var(--font-xsmall);
+        font-weight: 100;
+    }
+
+    .footer__menu {
+        gap: var(--spacing-12);
+    }
+
+    .footer__item {
+        max-width: 15%;
+    }
+
+    .footer__copy {
+        font-size: var(--font-xsmall);
+        font-weight: 100;
+    }
+    
     /* + MAIN CONTACTO */
 
     .main__cont {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: var(--spacing-16);
-        padding: var(--spacing-20);
+        gap: var(--spacing-8);
+        padding: var(--spacing-8);
+    }
+    
+    .contacto__form {
+        
+        padding: var(--spacing-24);
+        width: 80%;
     }
 }
 
-@media screen and (max-width: 480) {
-
-    /* + MAIN INDEX */
-
-    .hero__eslogan {
-        font-size: 1.15em;
-    }
-
-    .seccion1__content {
-        display: flex;
-        flex-direction: column;
-        gap: var(--spacing-8);
-    }
-
-    .seccion1__text {
-        font-size: 1.2em;
-    }
-
-    .seccion2 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: var(--spacing-36);
-    }
-
-    .seccion2__CEO {
-        font-size: 1.2em;
-    }
-
-    .seccion2__foto_CEO {
-        width: 50%;
-    }
-
-    .seccion3_title {
-        font-size: var(--font-large);
-    }
-
-    .seccion3__seleccion {
-        font-size: var(--font-small);
-        gap: var(--spacing-8);
-    }
-
-    .destino__title {
-        font-size: var(--font-small);
-        gap: none;
-    }
-}
