@@ -1,132 +1,113 @@
 /* Responsive */
-
+<style>
 /* Default styles for all screen sizes */
 /* Styles for screens with a maximum width of 600px */
 @media (max-width: 600px) {
-    body {
-        font-size: 12px;
-    }
+  body {
+    font-size: 12px;
+  }
 }
-
 /* Styles for screens with a minimum width of 601px */
 @media (min-width: 601px) {
-    body {
-        font-size: 20px;
-    }
+  body {
+    font-size: 20px;
+  }
 }
-
+</style>
 /*Nosotros*/
 /*fondo de la pagina completa*/
 html,
 body {
-    min-height: 100%;
-    min-width: 100%;
+  min-height: 100%;
+  min-width: 100%;
 }
-
 body {
-    background: #FFFFFF;
+  background: #FFFFFF;
 }
-
-
 /* Fondo Intero */
 #box {
-    padding: 20px 100px 30px 100px;
-    margin-top: 0.2%;
-    margin-right: 0%;
-    max-width: 50%;
-    border: 1px solid #FFFFFF;
-    text-align: center;
-    border-radius: 10px;
+  padding: 20px 100px 30px 100px;
+  margin-top: 0.2%;
+  margin-right: 0%;
+  max: width 50%;
+  border: 1px solid #FFFFFF;
+  text-align: center;
+  border-radius: 10px;
 }
-
 /* color de fondo de la caja interior  */
 /* p { margin-top:10px; }
         .grisVM { background-color:rgba(0, 0, 0, 0.1); color:#000000; }
-    */
+   */
 .grisVM {
-    background-image: linear-gradient(to right, #fcfcfc, #FFFFFF);
+  background-image: linear-gradient(to right, #fcfcfc, #FFFFFF);
 }
-
 /* Efectos Texto 1 */
 .textoVM1 {
-    animation: marquee 5s linear infinite;
-    white-space: nowrap;
-    overflow: auto;
+  animation: marquee 5s linear infinite;
+  white-space: nowrap;
+  overflow: auto;
 }
-
 @keyframes marquee {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
-
-
 /* Fin Texto 1 */
 /* Texto alineado a la izquierda */
 .texIzqVM {
-    text-align: left;
+  text-align: left;
 }
-
 /* Efecto texto 2 */
 .textoVM2 {
-    transition: transform 0.3s;
+  transition: transform 0.3s;
 }
-
 .textoVM2:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
-
 /* Fin texto 2 */
 /*efecto de las fotos*/
 .imgnosotros {
-    transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
-
 .imgnosotros:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 .imgnosotros {
-    padding: 8px;
-    margin: 30px auto;
-    max-width: 70%;
-    border: 1px solid #000;
-    text-align: center;
-    border-radius: 30px;
+  padding: 8px;
+  margin: 30px auto;
+  max-width: 70%;
+  border: 1px solid #000;
+  text-align: center;
+  border-radius: 30px;
 }
-
 /* Efecto intermitencia para Foto Tour */
-/* .imgTour {
+/*.imgTour {
   transition: transform 0.5 ease;
   padding:20px; margin:10px auto; max-width:70%; border:1px solid #000; text-align:center; border-radius:30px;
-} */
+}
+*/
 /* Prueba efecto 2 Tour */
 @keyframes zoomInOut {
-    0% {
-        transform: scale(0.5);
-    }
-
-    50% {
-        transform: scale(1);
-    }
-
-    100% {
-        transform: scale(0.5s);
-    }
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5s);
+  }
 }
-
 .imgTour {
-    animation: zoomInOut 3s infinite;
+  animation: zoomInOut 3s infinite;
 }
-
 /* Fin prueba efecto 2 Tour */
 #fixedTexVM {
-    font-size: medium;
-    position: fixed;
-    top: 62%;
-    margin-left: 92%;
+  font-size: medium;
+  position: fixed;
+  top: 62%;
+  margin-left: 92%;
 }
