@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inicio | Eureka Charter</title>
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="./css/estilo.css">
+    <!-- Agregar el Favicon -->
+    <link rel="icon" href="./media/iconos/EC_Icono.ico">
+</head>
+
+<body>
+    <header>
+        <section class="navbar container">
+            <section class="navbar__info">
+                <picture class="navbar__logo">
+                    <a href="index.html"><img src="./media/img/EC_logo.png" alt="logo eureka charter"></a>
+                </picture>
+                <article class="navbar__nombre">
+                    <p>Eureka Charter</p><!-- Nombre de la Empresa -->
+                </article>
+            </section>
+            <button id="abrir" class="abrir-menu"><iconify-icon icon="line-md:menu-unfold-right"
+                    width="30"></iconify-icon></button>
+            <nav class="navbar__item" id="nav">
+                <button id="cerrar" class="cerrar-menu"><iconify-icon icon="line-md:menu-fold-right"
+                        width="30"></iconify-icon></button>
+                <ul class="navbar__menu">
+                    <li>
+                        <a class="navbar__link" href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="navbar__link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="with-submenu">
+                        <a class="navbar__link with-icon" href="flota.html">Flota<iconify-icon class="chevron"
+                                icon="tabler:chevron-down"></iconify-icon></a>
+                        <ul class="submenu"><!-- ! FLOTA -->
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="Beechcraft1900D.html">Beechcraf 1900D</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="LearJet45XR.html">LearJet 45XR</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="Falcon900EX.html">FALCON 900 EX Easy II</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="with-submenu">
+                        <a class="navbar__link with-icon" href="servicios.html">Servicios<iconify-icon class="chevron"
+                                icon="tabler:chevron-down"></iconify-icon></a>
+                        <ul class="submenu"><!-- ! SERVICIOS -->
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="servicios.html">Vuelos Privados</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="servicios.html">Tour</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="servicios.html">Medevac</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="navbar__link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <section class="hero">
+        <article class="hero__content container">
+            <p class="hero__eslogan">Tu destino, nuestro compromiso: Vuela Privado con Elegancia y Eficiencia</p>
+        </article>
+    </section>
+    <main>
+        <section class="seccion3 container"><!-- Seccion 3 -->
+            <form class="seccion3__formulario" action="">
+                <!-- Interés - Radio (única selección) -->
+                <h2 class="seccion3__title">Cotiza tu vuelo privado</h2>
+                <div>
+                    <!-- Formulario de fecha de viaje -->
+                    <!-- Iconos de https://tablericons.com/-->
+                    <div class="seccion3__seleccion">
+                        <div>
+                            <label for="seleccion"></label>
+                            <input type="radio" name="seleccion" id="A"> Ida y Vuelta
+                        </div>
+                        <div>
+                            <input type="radio" name="seleccion" id="B"> Solo Ida
+                        </div>
+                    </div>
+                </div>
+                <div class="seccion3__form">
+                    <div class="seccion3__destino"><!-- Selección Destino -->
+                        <div class="destino">
+                            <p class="destino__title">Destino</p>
+                            <div class="destino__seleccion">
+                                <span><!--Origen-->
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-plane-departure" width="35" height="35"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#b57d07" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M14.639 10.258l4.83 -1.294a2 2 0 1 1 1.035 3.863l-14.489 3.883l-4.45 -5.02l2.897 -.776l2.45 1.414l2.897 -.776l-3.743 -6.244l2.898 -.777l5.675 5.727z" />
+                                        <path d="M3 21h18" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <label for="Origen"></label>
+                                    <input class="estilo__input" type="text" name="Origen" id="Origen"
+                                        placeholder="Origen">
+                                </span>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="destino__seleccion">
+                            <span><!--Destino-->
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-plane-arrival" width="35" height="35"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#b57d07" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M15.157 11.81l4.83 1.295a2 2 0 1 1 -1.036 3.863l-14.489 -3.882l-1.345 -6.572l2.898 .776l1.414 2.45l2.898 .776l-.12 -7.279l2.898 .777l2.052 7.797z" />
+                                    <path d="M3 21h18" />
+                                </svg>
+                            </span>
+                            <span>
+                                <label for="Destino"></label>
+                                <input class="estilo__input" type="text" name="Destino" id="Destino"
+                                    placeholder="Destino">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="seccion3__destino"><!-- Fecha de Viaje -->
+                        <!-- <p class="destino__title">Fecha de viaje</p> -->
+                        <div><!-- Fecha de Partida -->
+                            <p class="destino__title">Partida</p>
+                            <div class="destino__seleccion">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-calendar-up" width="35" height="35"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#b57d07" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M12.5 21h-6.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5" />
+                                        <path d="M16 3v4" />
+                                        <path d="M8 3v4" />
+                                        <path d="M4 11h16" />
+                                        <path d="M19 22v-6" />
+                                        <path d="M22 19l-3 -3l-3 3" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <label for="fecha"></label>
+                                    <input class="estilo__input" type="date" min="2023-09-01" max="2023-09-31">
+                                </span>
+                            </div>
+                        </div>
+                        <div><!-- Fecha de Regreso -->
+                            <p class="destino__title">Regreso</p>
+                            <div class="destino__seleccion">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-calendar-down" width="35" height="35"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#b57d07" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M12.5 21h-6.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5" />
+                                        <path d="M19 16v6" />
+                                        <path d="M22 19l-3 3l-3 -3" />
+                                        <path d="M16 3v4" />
+                                        <path d="M8 3v4" />
+                                        <path d="M4 11h16" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <label for="fecha"></label>
+                                    <input class="estilo__input" type="date" min="2023-09-01" max="2023-09-31">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seccion3__destino"><!-- Cantidad de Pasajeros -->
+                        <p class="destino__title">Pasajeros</p>
+                        <div class="destino__seleccion">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user"
+                                    width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#b57d07"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                </svg>
+                            </span>
+                            <span>
+                                <label for="cantiadad de pasajeros"></label>
+                                <input class="estilo__input" type="text" name="cantiadad de pasajeros" maxlength="3"
+                                    style="width: 50px;">
+                            </span>
+                        </div>
+                        <div class="boton__enviar"><!-- Boton Enviar-->
+                            <input class="botoncito" type="submit" value="Enviar">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section class="seccion1 container"><!-- Seccion 1 -->
+            <article class="seccion1__content">
+                <p class="seccion1__text">Somos la compañía de vuelos privados más grande cuando se trata de
+                    comodidades,
+                    transformamos la
+                    manera
+                    de viajar de nuestros clientes.</p>
+                <br>
+                <p class="seccion1__text">Nuestra prioridad es la seguridad y nuestra misión es ayudarle a viajar de la
+                    forma
+                    más eficiente.
+                    Nos
+                    adaptamos a sus requerimientos y aportamos soluciones, garantizando discreción y privacidad en todo
+                    momento.</p>
+            </article>
+        </section>
+        <section class="fondo"><!-- Seccion 2 -->
+            <div class="seccion2 container">
+                <article>
+                    <p class="seccion2__CEO">"La diferencia está en el servicio, la predisposición, la velocidad de
+                        respuesta y la excelencia.
+                        Nos dedicamos en garantizar que su experiencia sea lo más cómoda y agradable posible y
+                        trabajamos
+                        día a día para que vuelvas a elegirnos."</p>
+                </article>
+                <picture class="seccion2__foto_CEO">
+                    <img class="foto" src="./media/img/CEO.jpg" alt="CEO Comercial">
+                    <figcaption>CEO Comercial - Eureka Charter</fig>
+                </picture>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav class="footer__navbar container">
+            <section class="footer__info">
+                <picture class="footer__logo">
+                    <img src="./media/img/EC_logo.png" alt="logo eureka charter">
+                </picture>
+                <article class="footer__nombre">
+                    <p>Eureka Charter</p><!-- Nombre de la Empresa -->
+                </article>
+            </section>
+            <section class="footer__redes">
+                <article class="foo__text">
+                <p class="footer__text">Siguenos en nuestras Redes:</p>
+            </article>
+                <ul class="footer__menu">
+                    <li class="footer__item">
+                        <a href="https://www.youtube.com/watch?v=TnvQP_hFIh8" target="_blank"><img
+                                src="./media/iconos/youtube1.png" alt="youtube"></a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://www.instagram.com/" target="_blank"><img src="./media/iconos/instagram.png"
+                                alt="instagram"></a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://www.linkedin.com/" target="_blank"><img src="./media/iconos/linkedin.png"
+                                alt="linkedin"></a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://twitter.com/?lang=es" target="_blank"><img src="./media/iconos/twitter-x.png"
+                                alt="twitter"></a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+        <h4 class="footer__copy">© 2023 - ERVICAJ / Web Design - Todos los derechos reservados</h4>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <script src="./js/navbar.js"></script>
+</body>
+
+</html>
