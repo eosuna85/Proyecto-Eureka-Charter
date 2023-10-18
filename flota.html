@@ -113,4 +113,185 @@
     <script src="./js/navbar.js"></script>
 </body>
 
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flota | Eureka Charter</title>
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="./css/estilo.css">
+    <!-- Agregar el Favicon -->
+    <link rel="icon" href="./media/iconos/EC_Icono.ico">
+</head>
+
+<body>
+    <header>
+        <section class="navbar container">
+            <section class="navbar__info">
+                <picture class="navbar__logo">
+                    <a href="index.html"><img src="./media/img/EC_logo.png" alt="logo eureka charter"></a>
+                </picture>
+                <article class="navbar__nombre">
+                    <p>Eureka Charter</p><!-- Nombre de la Empresa -->
+                </article>
+            </section>
+            <button id="abrir" class="abrir-menu"><iconify-icon icon="line-md:menu-unfold-right"
+                    width="30"></iconify-icon></button>
+            <nav class="navbar__item" id="nav">
+                <button id="cerrar" class="cerrar-menu"><iconify-icon icon="line-md:menu-fold-right"
+                        width="30"></iconify-icon></button>
+                <ul class="navbar__menu">
+                    <li>
+                        <a class="navbar__link" href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="navbar__link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="with-submenu">
+                        <a class="navbar__link with-icon" href="flota.html">Flota<iconify-icon class="chevron"
+                                icon="tabler:chevron-down"></iconify-icon></a>
+                        <ul class="submenu"><!-- ! FLOTA -->
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="Beechcraft1900D.html">Beechcraf 1900D</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="LearJet45XR.html">LearJet 45XR</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="Falcon900EX.html">FALCON 900 EX Easy II</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="with-submenu">
+                        <a class="navbar__link with-icon" href="servicios.html">Servicios<iconify-icon class="chevron"
+                                icon="tabler:chevron-down"></iconify-icon></a>
+                        <ul class="submenu"><!-- ! SERVICIOS -->
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="servicios.html">Vuelos Privados</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="servicios.html">Tour</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="servicios.html">Medevac</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="navbar__link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <br>
+        <!--- Iniciio la pagina FLOTA con un titulo.-->
+        <div class="titulo">
+            <h2 class="titulo_h2">|| Nuestra flota de aviones ||</h2>
+        </div>
+        <br>
+
+        <!--- Continua la pagina FLOTA con un un SLIDER, que muestra una vista previa de los aviones.-->
+        <div class="slider">
+            <ul>
+                <li><img src="./media/img/Slide/SL03-LJ04.jpg"></li>
+                <li><img src="./media/img/Slide/S02-F07.jpg"></li>
+                <li><img src="./media/img/Slide/SLLJ03.jpg"></li>
+                <li><img src="./media/img/Slide/S01-BE13.jpg"></li>
+            </ul>
+        </div>
+        <br>
+
+        <!--- la misma pagina FLOTA, tiene una vista previa de los aviones con TARJETAS-->
+        <br>
+        <div class="titulo">
+            <h2 class="titulo_h2">|| Todos los detalles de las Aeronaves ||</h2>
+        </div>
+
+        <div class="containiir">
+            <div class="cards">
+                <img src="./media/img/card03-leardjet.jpg">
+                <div class="card-cont">
+                    <h2 class="titulo_h2">LearJet 45XR</h2>
+                    <p>El LearJet 45XR es un avión ligero de negocios que ofrece un rendimiento, confort y versatilidad
+                        excepcionales. Es una opción popular para una variedad de usuarios, incluyendo empresas, equipos
+                        deportivos, particulares y gobiernos.</p>
+                    <a href="LearJet45XR.html" class="card-button">Leer mas</a>
+                </div>
+            </div>
+
+            <div class="cards">
+                <img src="./media/img/card01-beecgcraft.jpg">
+                <div class="card-cont">
+                    <h2 class="titulo_h2">Beechcraft 1900D</h2>
+                    <p>El Beechcraft 1900D es un avión regional turbohélice fiable y eficiente que ofrece un rendimiento
+                        y
+                        confort excepcionales. Es una opción popular para una variedad de usuarios, incluyendo
+                        aerolíneas,
+                        empresas y operadores privados.</p>
+                    <a href="Beechcraft1900D.html" class="card-button">Leer mas</a>
+                </div>
+            </div>
+
+            <div class="cards">
+                <img src="./media/img/card02-falcon900.jpg">
+                <div class="card-cont">
+                    <h2 class="titulo_h2">Falcon 900 EX II</h2>
+                    <p>El Falcon 900 EX II LV-GQK es un avión ejecutivo de largo alcance que ofrece un rendimiento,
+                        confort
+                        y versatilidad excepcionales. Es una opción ideal para una variedad de usuarios, incluyendo
+                        empresas, particulares y gobiernos.</p>
+                    <a href="Falcon900EX.html" class="card-button">Leer mas</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--- Final de la pagina FLOTA, todos los Hipervinculos de las tarjetas llevan a Nuevos HTML del Submenu. -->
+    </main>
+
+
+    <!-- Comienzo del FOOTER -->
+    <footer>
+        <nav class="footer__navbar container">
+            <section class="footer__info">
+                <picture class="footer__logo">
+                    <img src="./media/img/EC_logo.png" alt="logo eureka charter">
+                </picture>
+                <article class="footer__nombre">
+                    <p>Eureka Charter</p><!-- Nombre de la Empresa -->
+                </article>
+            </section>
+            <section class="footer__redes">
+                <p class="footer__text">Siguenos en nuestras Redes:</p>
+                <ul class="footer__menu">
+                    <li class="footer__item">
+                        <a href="https://www.youtube.com/watch?v=TnvQP_hFIh8" target="_blank"><img
+                                src="./media/iconos/youtube1.png" alt="youtube"></a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://www.instagram.com/" target="_blank"><img src="./media/iconos/instagram.png"
+                                alt="instagram"></a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://www.linkedin.com/" target="_blank"><img src="./media/iconos/linkedin.png"
+                                alt="linkedin"></a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://twitter.com/?lang=es" target="_blank"><img src="./media/iconos/twitter-x.png"
+                                alt="twitter"></a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+        <h4 class="footer__copy">© 2023 - ERVICAJ / Web Design - Todos los derechos reservados</h4>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <script src="./js/navbar.js"></script>
+</body>
+
 </html>

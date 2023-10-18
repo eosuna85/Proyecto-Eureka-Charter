@@ -100,8 +100,14 @@ header {
     max-width: 15%;
 }
 
+<<<<<<< HEAD
 .abrir-menu, .cerrar-menu{
     display: none;    
+=======
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+>>>>>>> 8527646c43645b2286ab7da3bac64ad921eb516a
 }
 
 .navbar__menu {
@@ -109,10 +115,17 @@ header {
     gap: var(--spacing-8);
 }
 
+<<<<<<< HEAD
 .navbar__item{
 display: flex;
 align-items: center;
 justify-content: space-between;
+=======
+.navbar__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+>>>>>>> 8527646c43645b2286ab7da3bac64ad921eb516a
 }
 
 .navbar__nombre {
@@ -135,7 +148,11 @@ justify-content: space-between;
     background-color: var(--secundary-solid);
 }
 
+<<<<<<< HEAD
 .chevron{
+=======
+.chevron {
+>>>>>>> 8527646c43645b2286ab7da3bac64ad921eb516a
     display: block;
 }
 
@@ -200,7 +217,11 @@ justify-content: space-between;
     font-family: var(--alternative-font-family);
     font-weight: 600;
     font-style: italic;
+<<<<<<< HEAD
     font-variant-caps:petite-caps;
+=======
+    font-variant-caps: petite-caps;
+>>>>>>> 8527646c43645b2286ab7da3bac64ad921eb516a
 }
 
 /* + MAIN - INDEX */
@@ -602,6 +623,7 @@ footer {
 @media screen and (max-width: 992px) {
 
     /* + MAIN INDEX */
+<<<<<<< HEAD
     
 .abrir-menu, .cerrar-menu{
     display: block;
@@ -651,6 +673,58 @@ footer {
 .submenu__link{
     display: none;
 }
+=======
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        color: #D9DADC;
+        font-size: 1.2rem;
+        background-color: transparent;
+        cursor: pointer;
+        padding: var(--spacing-8);
+    }
+
+    .navbar__item {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .navbar__item {
+        flex-direction: column;
+        align-items: end;
+        justify-content: start;
+        gap: var(--spacing-8);
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: var(--spacing-36) var(--spacing-12);
+        background-color: var(--dark-solid-3);
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        position: absolute;
+        z-index: 3;
+    }
+
+    .navbar__item.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .navbar__menu {
+        flex-direction: column;
+        align-items: start;
+
+    }
+
+    .chevron {
+        display: none;
+    }
+
+    .submenu__link {
+        display: none;
+    }
+>>>>>>> 8527646c43645b2286ab7da3bac64ad921eb516a
 
     .hero__content {
         justify-content: center;
@@ -737,7 +811,11 @@ footer {
         font-size: var(--font-xsmall);
         font-weight: 100;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 8527646c43645b2286ab7da3bac64ad921eb516a
     /* + MAIN CONTACTO */
 
     .main__cont {
@@ -746,10 +824,17 @@ footer {
         justify-content: center;
         gap: var(--spacing-12);
         padding: var(--spacing-12);
+<<<<<<< HEAD
     }  
 
     .contacto__form {
         
+=======
+    }
+
+    .contacto__form {
+
+>>>>>>> 8527646c43645b2286ab7da3bac64ad921eb516a
         padding: var(--spacing-24);
         width: 80%;
     }
@@ -829,18 +914,449 @@ footer {
         font-size: var(--font-xsmall);
         font-weight: 100;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 8527646c43645b2286ab7da3bac64ad921eb516a
     /* + MAIN CONTACTO */
 
     .main__cont {
         gap: var(--spacing-8);
         padding: var(--spacing-8);
     }
+<<<<<<< HEAD
     
     .contacto__form {
         
+=======
+
+    .contacto__form {
+
+>>>>>>> 8527646c43645b2286ab7da3bac64ad921eb516a
         padding: var(--spacing-24);
         width: 80%;
     }
 }
 
+<<<<<<< HEAD
+=======
+/*- COMIENZO de la Pagina FLOTA*/
+/*- Inicia con un SlIDER*/
+
+.titulo_h2 {
+    text-align: center;
+    color: rgb(217, 152, 32);
+    font-weight: bold;
+    font-size: 34px;
+}
+
+/*- Caracteristicas y funciones del efecto SlIDER para mostrar las fotos*/
+
+.slider {
+    width: 76%;
+    margin: auto;
+    height: 720;
+    overflow: hidden;
+    border-radius: 25px;
+    animation: fadeInRight 3s ease;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.9)
+}
+
+.slider ul {
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+/*- pagina FLOTA - Contiene TARJETAS de vista previa. */
+
+.containiir {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 37px;
+    margin-top: 50px;
+}
+
+.cards {
+    width: 345px;
+    background: linear-gradient(var(--dark-solid-3) 65%, rgb(190, 187, 187));
+    border-radius: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.6s ease;
+}
+
+.cards:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.9)
+}
+
+.cards img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-cont {
+    padding: 20px;
+}
+
+.card-cont p {
+    font-size: 17px;
+    color: rgb(217, 152, 32);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.card-button {
+    display: inline-block;
+    background-color: rgb(18, 18, 19);
+    color: #9ba5b9;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 8px 16px;
+}
+
+.card-button:hover {
+    display: inline-block;
+    background-color: rgb(69, 69, 75);
+    color: #9196a0;
+    text-decoration: none;
+    transition: transform 0.6s ease;
+    border-radius: 15px;
+    padding: 11px 19px;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.9)
+}
+
+/*- Submenus de la pagina FLOTA: Especificaciones tecnicas de cada avion (Beechraft / Falcon 900/ Learjet. */
+
+.hero1 {
+    overflow: hidden;
+}
+
+.heading1 h1 {
+    color: #b57d07;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+
+.hero-content {
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+    animation: fadeInUp 3s ease;
+}
+
+.container1 .hero-content h2 {
+    font-size: 23px;
+    margin-bottom: 20px;
+    color: #44a8c4;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 4vw;
+    color: #395182;
+    text-align: center;
+}
+
+.hero-content button {
+    display: inline-block;
+    background-color: #1F1F1F;
+    color: #7fa1e5;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #33576f;
+    color: #1F1F1F;
+    transform: scale(1.1);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.9)
+}
+
+.hero-image {
+    flex: 1;
+    width: 600px;
+    margin: auto;
+    animation: fadeInRight 3s ease;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.9)
+}
+
+/*- Submenus de la pagina FLOTA: Especificaciones tecnicas / media query para 480px y 990px*/
+
+@media screen and (max-width: 480px) {
+    .container1 .hero-content p {
+        font-size: 15px;
+    }
+
+    .heading1 h1 {
+        font-size: 13px;
+        margin-top: 25px;
+    }
+
+    .hero1 {
+        margin: 0px;
+    }
+
+    .container1 {
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+
+    .hero-content {
+        width: 100%;
+        margin: 35px 0px;
+    }
+
+    .hero-content h2 {
+        font-size: 11px;
+    }
+
+    .hero-content button {
+        font-size: 12px;
+        padding: 8px 16px
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+
+    .footer__copy {
+        font-size: 14px;
+    }
+
+    .footer__text {
+        font-size: 12px;
+    }
+
+    .titulo_h2 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .heading1 h1 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .hero1 {
+        margin: 0px;
+    }
+
+    .container1 {
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+
+    .hero-content {
+        width: 100%;
+        margin: 35px 0px;
+    }
+
+    .hero-content h2 {
+        font-size: 29px;
+    }
+
+    .hero-content p {
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+
+    .hero-content button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+/*- Submenus de la pagina FLOTA: ANIMACIONES para todos los dispositivos*/
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/*- Submenus de la pagina FLOTA: Comienzo del sector de GALERIA DE IMAGENES*/
+
+.gal-03 h3 {
+    font-size: 35px;
+    color: #b57d07;
+    text-align: center;
+}
+
+.container-img {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+}
+
+.container-img .box-img figure {
+    width: 100%;
+    height: 100%;
+}
+
+.container-img .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 3s ease;
+    border-radius: 15px;
+    border: 2px solid #000;
+}
+
+.container-img .box-img img:hover {
+    transform: scale(1.3);
+    transform: 3s ease;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.9)
+}
+
+.container-img .box-img:nth-child(1) {
+    grid-column-start: span 2;
+}
+
+.container-img .box-img:nth-child(4) {
+    grid-row-start: span 2;
+}
+
+/*- Submenus de la pagina FLOTA: GALERIA media query para 480px y 992px */
+
+@media screen and (max-width:992px) {
+    .container-img {
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-template-rows: 200px;
+    }
+
+    .container-img .box-img:nth-child(1) {
+        grid-column-start: span 1;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .container-img {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container-img .box-img img {
+        height: 200px;
+    }
+}
+
+.cta-button button {
+    width: 100%;
+}
+
+/*- FINAL de estilos/ media query / Pagina FLOTA y SUBMENUS */
+>>>>>>> 8527646c43645b2286ab7da3bac64ad921eb516a
