@@ -438,6 +438,16 @@ header {
     font-size: var(--font-medium);
 }
 
+.vinculo__estilo{
+    border-bottom:transparent;
+    transition: 0.2s ease-in-out;
+}
+
+.vinculo__estilo:hover{
+    border-bottom: red 2px solid;
+    border-radius: 2px;
+}
+
 .contacto__ubicacion {
     display: flex;
     align-items: center;
@@ -470,17 +480,38 @@ header {
 
 }
 
+/* + FORMULARIO PAG CONTACTO */
+
 .contacto__form {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    box-sizing: content-box;
     gap: var(--spacing-12);
     border: solid 2px var(--dark-solid-2);
     border-radius: 50px;
     background: hsl(218, 5%, 66%);
     background: linear-gradient(30deg, #84868b 0%, rgb(38, 38, 40) 90%);
-    padding: var(--spacing-36);
+    padding: var(--spacing-24);
     width: 70%;
 }
+
+.form__in{
+    display: flex;
+    box-sizing: content-box;
+    align-items: center;
+    gap: var(--spacing-8);
+    position: relative;
+}
+
+.icono__form{
+    display: block;
+    position: absolute;
+    right: 10px;
+    z-index: 5;
+    opacity: 0;
+}
+
 
 .form__input {
     width: 100%;
@@ -491,6 +522,23 @@ header {
     font-family: var(--alternative-font-family);
     font-size: var(--font-small);
     font-weight: 500;
+}
+
+.advertencia__input{
+    font-family: var(--alternative-font-family);
+    font-size: var(--font-xsmall);
+    color: var(--light-font-solid);
+    font-weight: 100;
+    display: none;
+}
+
+.advertencia__input-activo{
+    display: block;
+}
+
+.form__coment{
+    display: flex;
+    box-sizing: content-box;
 }
 
 .form__comentario {
@@ -504,7 +552,31 @@ header {
     font-weight: 500;
 }
 
+.error__form{
+    display: none;
+}
+
+.text__error{
+    display: flex;
+    gap: var(--spacing-8);    
+    align-items: center;
+    font-family: var(--alternative-font-family);
+    font-size: .9rem;
+    color: #fff;
+    font-weight: 300;
+    background-color: #EF6A1F;
+    border-radius: 6px;
+    padding: var(--spacing-8);
+}
+
+.error__form-activo{
+    display: block;
+}
+
 .contacto__enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     padding: 10px 20px;
     margin: 6px 0;
@@ -515,6 +587,7 @@ header {
     border: none;
     border-bottom: 2px solid var(--dark-solid-2);
     border-radius: 25px;
+    background-color: var(--light-font-solid);
     transition: all .2s ease-in-out;
 }
 
@@ -523,7 +596,31 @@ header {
     background-color: var(--secundary-solid);
 }
 
-/* + CONTACTO FORMULARIO */
+.envio{
+    display: none;
+    font-family: var(--alternative-font-family);
+    font-size: var(--font-medium);
+    font-weight: 300;
+    color: hwb(48 54% 8%);
+    text-align: center;
+}
+
+.envio-activo{
+    display: block;
+}
+
+
+/* + ESTILOS PARA LA VALIDACION DEL FORMULARIO CONTACTO */
+
+.form__grupo-correcto .icono__form{
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.form__grupo-incorrecto .icono__form{
+    color: #bb2929;
+    /* opacity: 1; */
+}
 
 /* + FOOTER */
 
@@ -664,8 +761,6 @@ footer {
     }
 }
 
-
-
 @media screen and (max-width: 768px) {
 
     /* + MAIN INDEX */
@@ -755,7 +850,6 @@ footer {
         padding: var(--spacing-24);
         width: 80%;
     }
-
 }
 
 @media screen and (max-width: 600px) {

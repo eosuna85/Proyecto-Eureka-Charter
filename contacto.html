@@ -97,7 +97,7 @@
                                     <path d="M3 7l9 6l9 -6" />
                                 </svg>
                             </span>
-                            <span>
+                            <span class="vinculo__estilo">
                                 <a href="mailto:info@eurekacharter.com" title="Enviar e-mail">info@eurekacharter.com</a>
                             </span>
                         </div>
@@ -113,8 +113,9 @@
                                         d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
                                 </svg>
                             </span>
-                            <span>
-                                <a href="https://wa.me/5491126377874" target="_blank">+54 911 2637-7874</a>
+                            <span class="vinculo__estilo">
+                                <a href="https://wa.me/5491126377874" target="_blank"
+                                    title="Enviar Mensaje via Whatsapp">+54 911 2637-7874</a>
                             </span>
                         </div>
                         <div class="contacto__ubicacion">
@@ -147,26 +148,40 @@
                 </section>
             </section>
             <!-- formulario de contacto -->
-            <form class="contacto__form">
+
+
+            <form class="contacto__form" id="form__contacto">
+                <div class="form__grupo-incorrecto"><!-- Apellido -->
+                    <label for="apellido"></label>
+                    <span class="form__in">
+                        <input class="form__input" type="text" name="apellido" id="apellido" required
+                            placeholder="Apellido"><iconify-icon class="icono__form" icon="tabler:xbox-x" width="25"></iconify-icon>
+                    </span>
+                </div>
+                <p class="advertencia__input">El campo apellido no debe contener números ni caracteres especiales</p>
                 <div><!-- Nombre -->
                     <label for="nombre"></label>
-                    <input class="form__input" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    <span class="form__in">
+                        <input class="form__input" type="text" name="nombre" id="nombre" placeholder="Nombre"><iconify-icon class="icono__form" icon="tabler:xbox-x" width="25"></iconify-icon>
+                    </span>
                 </div>
-                <div><!-- Apellido -->
-                    <label for="apellido"></label>
-                    <input class="form__input" type="text" name="apellido" id="apellido" required
-                        placeholder="Apellido">
-                </div>
+                <p class="advertencia__input">El campo nombre no debe contener números ni caracteres especiales</p>
                 <div><!-- E-Mail -->
                     <label for="mail"></label>
-                    <input class="form__input" type="email" required placeholder="E-Mail">
+                    <span class="form__in">
+                        <input class="form__input" type="email" required placeholder="E-Mail"><iconify-icon class="icono__form" icon="tabler:xbox-x" width="25"></iconify-icon>
+                    </span>
                 </div>
+                <p class="advertencia__input">Por favor intruce un email válido</p>
                 <div><!-- Teléfono -->
                     <label for="telefono"></label>
-                    <input class="form__input" type="tel" name="phone" id="phone" pattern="[0-9]{13}" required
-                        placeholder="5491100000000">
+                    <span class="form__in">
+                        <input class="form__input" type="tel" name="phone" id="phone" pattern="[0-9]{13}" required
+                            placeholder="5491100000000"><iconify-icon class="icono__form" icon="tabler:xbox-x" width="25"></iconify-icon>
+                    </span>
                 </div>
-                <div><!-- Motivo de la consulta -->
+                <p class="advertencia__input">Por favor intruce un número de teléfono válido, máximo 13 dígitos</p>
+                <div class="form__coment"><!-- Motivo de la consulta -->
                     <label for="Consulta"></label>
                     <select class="form__input" name="Consulta" id="Consulta">
                         <option value="1">Movito de Consulta</option>
@@ -175,13 +190,27 @@
                         <option value="4">Otro</option>
                     </select>
                 </div>
-                <div><!-- Comentarios -->
+                <div class="form__coment"><!-- Comentarios -->
                     <label for="comentarios"></label>
                     <textarea class="form__comentario" name="comentarios" id="comentarios" cols="30" rows="10" required
                         placeholder="Mensaje"></textarea>
                 </div>
+                <div class="error__form">
+                    <p class="text__error"><svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-alert-triangle" width="60" height="60"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 9v4" />
+                            <path
+                                d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" />
+                            <path d="M12 16h.01" />
+                        </svg>Se produjeron errores de validación. Por favor confirme los campos y envíelo
+                        nuevamente.</p>
+                </div>
                 <div><!-- Sumbit -->
                     <input class="contacto__enviar" type="submit" value="Enviar">
+                    <p class="envio">Su consulta fue enviada con exito!</p>
                 </div>
             </form>
         </div>
