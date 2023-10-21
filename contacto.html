@@ -148,37 +148,43 @@
                 </section>
             </section>
             <!-- formulario de contacto -->
-            <form class="contacto__form" id="form__contacto">
-                <div class="form__grupo-incorrecto"><!-- Apellido -->
+            <form class="contacto__form" id="formulario">
+                <div class="form__grupo" id="grupo__apellido"><!-- Apellido -->
                     <label for="apellido"></label>
                     <span class="form__in">
                         <input class="form__input" type="text" name="apellido" id="apellido" required
-                            placeholder="Apellido"><iconify-icon class="icono__form" icon="tabler:xbox-x" width="25"></iconify-icon>
+                            placeholder="Apellido">
+                        <iconify-icon class="icono__form" icon="iconamoon:attention-circle" width="25"></iconify-icon>
                     </span>
+                    <p class="advertencia__input">El campo apellido no debe contener números ni caracteres especiales
+                    </p>
                 </div>
-                <p class="advertencia__input">El campo apellido no debe contener números ni caracteres especiales</p>
                 <div><!-- Nombre -->
                     <label for="nombre"></label>
                     <span class="form__in">
-                        <input class="form__input" type="text" name="nombre" id="nombre" placeholder="Nombre"><iconify-icon class="icono__form" icon="tabler:xbox-x" width="25"></iconify-icon>
+                        <input class="form__input" type="text" name="nombre" id="nombre"
+                            placeholder="Nombre"><iconify-icon class="icono__form" icon="iconamoon:attention-circle"
+                            width="25"></iconify-icon>
                     </span>
                 </div>
                 <p class="advertencia__input">El campo nombre no debe contener números ni caracteres especiales</p>
                 <div><!-- E-Mail -->
                     <label for="mail"></label>
                     <span class="form__in">
-                        <input class="form__input" type="email" required placeholder="E-Mail"><iconify-icon class="icono__form" icon="tabler:xbox-x" width="25"></iconify-icon>
+                        <input class="form__input" type="email" required id="email" placeholder="E-Mail"><iconify-icon
+                            class="icono__form" icon="iconamoon:attention-circle" width="25"></iconify-icon>
                     </span>
+                    <p class="advertencia__input">Por favor intruce un email válido</p>
                 </div>
-                <p class="advertencia__input">Por favor intruce un email válido</p>
                 <div><!-- Teléfono -->
                     <label for="telefono"></label>
                     <span class="form__in">
                         <input class="form__input" type="tel" name="phone" id="phone" pattern="[0-9]{13}" required
-                            placeholder="5491100000000"><iconify-icon class="icono__form" icon="tabler:xbox-x" width="25"></iconify-icon>
+                            placeholder="5491100000000"><iconify-icon class="icono__form" icon="iconamoon:attention-circle"
+                            width="25"></iconify-icon>
                     </span>
+                    <p class="advertencia__input">Por favor intruce un número de teléfono válido, máximo 13 dígitos</p>
                 </div>
-                <p class="advertencia__input">Por favor intruce un número de teléfono válido, máximo 13 dígitos</p>
                 <div class="form__coment"><!-- Motivo de la consulta -->
                     <label for="Consulta"></label>
                     <select class="form__input" name="Consulta" id="Consulta">
@@ -207,7 +213,7 @@
                         nuevamente.</p>
                 </div>
                 <div><!-- Sumbit -->
-                    <input class="contacto__enviar" type="submit" value="Enviar">
+                    <button class="contacto__enviar" type="submit">Enviar</button>
                     <p class="envio">Su consulta fue enviada con exito!</p>
                 </div>
             </form>
@@ -249,6 +255,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     <script src="./js/navbar.js"></script>
+    <script src="./js/validacionForm.js"></script>
 </body>
 
 </html>
