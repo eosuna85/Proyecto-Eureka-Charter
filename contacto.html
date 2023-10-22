@@ -150,48 +150,48 @@
             <!-- formulario de contacto -->
             <form class="contacto__form" id="formulario">
                 <div class="form__grupo" id="grupo__apellido"><!-- Apellido -->
-                    <label for="apellido"></label>
+                    <label for="lname"></label>
                     <span class="form__in">
-                        <input class="form__input" type="text" name="apellido" id="apellido" required
-                            placeholder="Apellido">
-                        <iconify-icon class="icono__form" icon="iconamoon:attention-circle" width="25"></iconify-icon>
+                        <input class="form__input" type="text" name="lname" id="lname" required placeholder="Apellido">
+                        <iconify-icon class="icono__form" icon="pajamas:attention" width="20"></iconify-icon>
                     </span>
-                    <p class="advertencia__input">El campo apellido no debe contener números ni caracteres especiales
+                    <p class="advertencia__input">El campo apellido no debe contener números, ni caracteres especiales.
                     </p>
                 </div>
-                <div><!-- Nombre -->
-                    <label for="nombre"></label>
+                <div class="form__grupo" id="grupo__nombre"><!-- Nombre -->
+                    <label for="fname"></label>
                     <span class="form__in">
-                        <input class="form__input" type="text" name="nombre" id="nombre"
-                            placeholder="Nombre"><iconify-icon class="icono__form" icon="iconamoon:attention-circle"
-                            width="25"></iconify-icon>
+                        <input class="form__input" type="text" name="fname" id="fname"
+                            placeholder="Nombre"><iconify-icon class="icono__form" icon="pajamas:attention"
+                            width="20"></iconify-icon>
                     </span>
+                    <p class="advertencia__input">El campo nombre no debe contener números, ni caracteres especiales.</p>
                 </div>
-                <p class="advertencia__input">El campo nombre no debe contener números ni caracteres especiales</p>
-                <div><!-- E-Mail -->
-                    <label for="mail"></label>
+                <div class="form__grupo" id="grupo__email"><!-- Email -->
+                    <label for="email"></label>
                     <span class="form__in">
-                        <input class="form__input" type="email" required id="email" placeholder="E-Mail"><iconify-icon
-                            class="icono__form" icon="iconamoon:attention-circle" width="25"></iconify-icon>
+                        <input class="form__input" type="email" name="email" id="email" required placeholder="Email">
+                        <iconify-icon class="icono__form" icon="pajamas:attention" width="20"></iconify-icon>
                     </span>
-                    <p class="advertencia__input">Por favor intruce un email válido</p>
+                    <p class="advertencia__input">Por favor intruce un email válido.
+                    </p>
                 </div>
-                <div><!-- Teléfono -->
-                    <label for="telefono"></label>
+                <div class="form__grupo" id="grupo__phone"><!-- Telefono -->
+                    <label for="phone"></label>
                     <span class="form__in">
-                        <input class="form__input" type="tel" name="phone" id="phone" pattern="[0-9]{13}" required
-                            placeholder="5491100000000"><iconify-icon class="icono__form" icon="iconamoon:attention-circle"
-                            width="25"></iconify-icon>
+                        <input class="form__input" type="text" name="phone" id="phone" required placeholder="Teléfono">
+                        <iconify-icon class="icono__form" icon="pajamas:attention" width="20"></iconify-icon>
                     </span>
-                    <p class="advertencia__input">Por favor intruce un número de teléfono válido, máximo 13 dígitos</p>
+                    <p class="advertencia__input">Por favor intruce un número de teléfono válido, máximo 13 dígitos.
+                    </p>
                 </div>
                 <div class="form__coment"><!-- Motivo de la consulta -->
                     <label for="Consulta"></label>
-                    <select class="form__input" name="Consulta" id="Consulta">
-                        <option value="1">Movito de Consulta</option>
-                        <option value="2">Servicios</option>
-                        <option value="3">Aeronaves</option>
-                        <option value="4">Otro</option>
+                    <select class="form__input" name="Consulta" id="Consulta" required>
+                        <option value="0">Movito de Consulta</option>
+                        <option value="1">Servicios</option>
+                        <option value="2">Aeronaves</option>
+                        <option value="3">Otro</option>
                     </select>
                 </div>
                 <div class="form__coment"><!-- Comentarios -->
@@ -199,7 +199,7 @@
                     <textarea class="form__comentario" name="comentarios" id="comentarios" cols="30" rows="10" required
                         placeholder="Mensaje"></textarea>
                 </div>
-                <div class="error__form">
+                <div class="error__form" id="error__form">
                     <p class="text__error"><svg xmlns="http://www.w3.org/2000/svg"
                             class="icon icon-tabler icon-tabler-alert-triangle" width="60" height="60"
                             viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
@@ -209,16 +209,17 @@
                             <path
                                 d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" />
                             <path d="M12 16h.01" />
-                        </svg>Se produjeron errores de validación. Por favor confirme los campos y envíelo
+                        </svg>Error: Por favor confirme los campos y envíelo
                         nuevamente.</p>
                 </div>
-                <div><!-- Sumbit -->
+                <div class="form__grupo form__grupo-btn-enviar"><!-- Sumbit -->
                     <button class="contacto__enviar" type="submit">Enviar</button>
-                    <p class="envio">Su consulta fue enviada con exito!</p>
+                    <p class="mensaje-exito" id="mensaje-exito">Su consulta fue enviada con exito!</p>
                 </div>
             </form>
         </div>
     </main>
+
     <footer>
         <nav class="footer__navbar container">
             <section class="footer__info">

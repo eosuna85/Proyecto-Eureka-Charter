@@ -370,6 +370,7 @@ header {
     border: none;
     border-bottom: 2px solid var(--dark-solid-2);
     border-radius: 25px;
+    cursor: pointer;
     transition: all .2s ease-in-out;
 }
 
@@ -522,6 +523,7 @@ header {
     font-family: var(--alternative-font-family);
     font-size: var(--font-small);
     font-weight: 500;
+    text-decoration: none;
 }
 
 .advertencia__input{
@@ -529,6 +531,9 @@ header {
     font-size: var(--font-xsmall);
     color: var(--light-font-solid);
     font-weight: 100;
+    margin-bottom: 0;
+    margin-top: var(--spacing-8);
+    text-align: center;
     display: none;
 }
 
@@ -573,6 +578,12 @@ header {
     display: block;
 }
 
+.form__grupo-btn-enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .contacto__enviar {
     display: flex;
     flex-direction: column;
@@ -588,6 +599,7 @@ header {
     border-bottom: 2px solid var(--dark-solid-2);
     border-radius: 25px;
     background-color: var(--light-font-solid);
+    cursor: pointer;
     transition: all .2s ease-in-out;
 }
 
@@ -596,16 +608,16 @@ header {
     background-color: var(--secundary-solid);
 }
 
-.envio{
-    display: none;
+.mensaje-exito {
     font-family: var(--alternative-font-family);
     font-size: var(--font-medium);
     font-weight: 300;
     color: hwb(48 54% 8%);
     text-align: center;
+    display: none;
 }
 
-.envio-activo{
+.mensaje-exito-activo{
     display: block;
 }
 
