@@ -48,9 +48,9 @@ Creación de contenido: 2 semanas
 8. Recursos Externos:
 Uso de imágenes.
 Iframe Google Maps https://www.google.com/maps
-Fuentes https://fonts.googleapis.com
+Fuentes Google Fonts https://fonts.googleapis.com
 Iframe Youtube https://www.youtube.com/
-API
+API OpenWeather https://openweathermap.org/
 
 9. Desarrollos Futuros y Mejoras Potenciales (Opcional)
 Registro de Usuarios: Permitir que los usuarios se registren para recibir actualizaciones y notificaciones.

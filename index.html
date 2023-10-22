@@ -86,12 +86,23 @@
                     <!-- Formulario de fecha de viaje -->
                     <!-- Iconos de https://tablericons.com/-->
                     <div class="seccion3__seleccion">
-                        <div>
-                            <label for="seleccion"></label>
-                            <input type="radio" name="seleccion" id="A"> Ida y Vuelta
+                        <div class="estilo__seleccion">
+                            <span>
+                                <label for="seleccion"></label>
+                                <input type="radio" name="seleccion" id="A"> Ida y Vuelta
+                            </span>
+                            <span>
+                                <input type="radio" name="seleccion" id="B"> Solo Ida
+                            </span>
                         </div>
                         <div>
-                            <input type="radio" name="seleccion" id="B"> Solo Ida
+                            <section class="form__api"><!-- ! API -->
+                                <div class="container"></div>
+                                <div class="api__icon"><img id="wicon" src="" alt="Weather icon"></div>
+                                <div class="temp">-℃</div>
+                                <div class="sumary">----</div>
+                                <div class="location"></div>
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -212,9 +223,7 @@
                 </div>
             </form>
         </section>
-        <section>
-            
-        </section>
+
         <section class="seccion1 container"><!-- Seccion 1 -->
             <article class="seccion1__content">
                 <p class="seccion1__text">Somos la compañía de vuelos privados más grande cuando se trata de
@@ -259,8 +268,8 @@
             </section>
             <section class="footer__redes">
                 <article class="foo__text">
-                <p class="footer__text">Siguenos en nuestras Redes:</p>
-            </article>
+                    <p class="footer__text">Siguenos en nuestras Redes:</p>
+                </article>
                 <ul class="footer__menu">
                     <li class="footer__item">
                         <a href="https://www.youtube.com/watch?v=TnvQP_hFIh8" target="_blank"><img
@@ -285,6 +294,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     <script src="./js/navbar.js"></script>
+    <script src="./js/apiTiempo.js"></script>
 </body>
 
 </html>
